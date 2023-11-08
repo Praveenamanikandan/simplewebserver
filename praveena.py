@@ -1,7 +1,5 @@
 from http.server import HTTPServer, BaseHTTPRequestHandler
 content = """
-from http.server import HTTPServer, BaseHTTPRequestHandler
-content = """
 <html>
        <title><b> Top Five Revenue Generating Software Companies</b> </title>
        <body>
@@ -38,7 +36,9 @@ content = """
                                <td>5.6 Billion</td>
                        </tr>
          </body>
-</html> 
+ 
+</html>
+"""
 class myhandler(BaseHTTPRequestHandler):
     def do_GET(self):
         print("request received")
